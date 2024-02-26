@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+# generated from catkin/python/catkin/environment_cache.py
+
+# based on a snapshot of the environment before and after calling the setup script
+# it emulates the modifications of the setup script without recurring computations
+
+# new environment variables
+
+# modified environment variables
+export CMAKE_PREFIX_PATH="/root/catkin_ws/src/turt_topic/build/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/root/catkin_ws/src/turt_topic/build/devel/lib:$LD_LIBRARY_PATH"
+export PATH='/opt/ros/noetic/bin:/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Users/LENOVO/AppData/Local/Programs/Python/Python310:/mnt/c/Users/LENOVO/AppData/Local/Programs/Python/Python310/Scripts:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/LENOVO/AppData/Local/Programs/Python/Python310/python.exe:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.3.0/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/MinGW/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Microchip/xc8/v2.40/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Users/LENOVO/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.9.9-hotspot/bin:/mnt/c/Users/LENOVO/anaconda3:/mnt/c/Users/LENOVO/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/LENOVO/anaconda3/Library/usr/bin:/mnt/c/Users/LENOVO/anaconda3/Library/bin:/mnt/c/Users/LENOVO/anaconda3/Scripts:/mnt/c/Users/LENOVO/miniconda3:/mnt/c/Users/LENOVO/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/LENOVO/miniconda3/Library/usr/bin:/mnt/c/Users/LENOVO/miniconda3/Library/bin:/mnt/c/Users/LENOVO/miniconda3/Scripts:/mnt/c/Program Files/aircrack-ng-1.7-win/bin:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2022.2/bin:/mnt/c/Users/LENOVO/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/LENOVO/AppData/Local/Programs/Python/Python310:/mnt/c/Users/LENOVO/AppData/Local/Microsoft/WindowsApps:/mnt/c/MinGW/bin:/mnt/c/Program Files/JetBrains/CLion 2022.2.4/bin:/mnt/c/Program Files/JetBrains/DataSpell 2022.2.3/bin:/mnt/c/Miktex/miktex/bin/x64/:/snap/bin'
+export PKG_CONFIG_PATH="/root/catkin_ws/src/turt_topic/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/root/catkin_ws/src/turt_topic/build'
+export PYTHONPATH="/root/catkin_ws/src/turt_topic/build/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/root/catkin_ws/src/turt_topic/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/root/catkin_ws/src/turt_topic:$ROS_PACKAGE_PATH"
