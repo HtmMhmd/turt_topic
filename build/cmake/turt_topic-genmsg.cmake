@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "turt_topic: 1 messages, 0 services")
+message(STATUS "turt_topic: 1 messages, 2 services")
 
 set(MSG_I_FLAGS "-Iturt_topic:/root/catkin_ws/src/turt_topic/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,16 @@ add_custom_target(_turt_topic_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "turt_topic" "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg" ""
 )
 
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/NewService.srv" NAME_WE)
+add_custom_target(_turt_topic_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "turt_topic" "/root/catkin_ws/src/turt_topic/srv/NewService.srv" ""
+)
+
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/AddT.srv" NAME_WE)
+add_custom_target(_turt_topic_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "turt_topic" "/root/catkin_ws/src/turt_topic/srv/AddT.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -36,6 +46,18 @@ _generate_msg_cpp(turt_topic
 )
 
 ### Generating Services
+_generate_srv_cpp(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/NewService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/turt_topic
+)
+_generate_srv_cpp(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/AddT.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/turt_topic
+)
 
 ### Generating Module File
 _generate_module_cpp(turt_topic
@@ -50,6 +72,10 @@ add_dependencies(turt_topic_generate_messages turt_topic_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg" NAME_WE)
+add_dependencies(turt_topic_generate_messages_cpp _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/NewService.srv" NAME_WE)
+add_dependencies(turt_topic_generate_messages_cpp _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/AddT.srv" NAME_WE)
 add_dependencies(turt_topic_generate_messages_cpp _turt_topic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -69,6 +95,18 @@ _generate_msg_eus(turt_topic
 )
 
 ### Generating Services
+_generate_srv_eus(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/NewService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/turt_topic
+)
+_generate_srv_eus(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/AddT.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/turt_topic
+)
 
 ### Generating Module File
 _generate_module_eus(turt_topic
@@ -83,6 +121,10 @@ add_dependencies(turt_topic_generate_messages turt_topic_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg" NAME_WE)
+add_dependencies(turt_topic_generate_messages_eus _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/NewService.srv" NAME_WE)
+add_dependencies(turt_topic_generate_messages_eus _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/AddT.srv" NAME_WE)
 add_dependencies(turt_topic_generate_messages_eus _turt_topic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -102,6 +144,18 @@ _generate_msg_lisp(turt_topic
 )
 
 ### Generating Services
+_generate_srv_lisp(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/NewService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/turt_topic
+)
+_generate_srv_lisp(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/AddT.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/turt_topic
+)
 
 ### Generating Module File
 _generate_module_lisp(turt_topic
@@ -116,6 +170,10 @@ add_dependencies(turt_topic_generate_messages turt_topic_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg" NAME_WE)
+add_dependencies(turt_topic_generate_messages_lisp _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/NewService.srv" NAME_WE)
+add_dependencies(turt_topic_generate_messages_lisp _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/AddT.srv" NAME_WE)
 add_dependencies(turt_topic_generate_messages_lisp _turt_topic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -135,6 +193,18 @@ _generate_msg_nodejs(turt_topic
 )
 
 ### Generating Services
+_generate_srv_nodejs(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/NewService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/turt_topic
+)
+_generate_srv_nodejs(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/AddT.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/turt_topic
+)
 
 ### Generating Module File
 _generate_module_nodejs(turt_topic
@@ -149,6 +219,10 @@ add_dependencies(turt_topic_generate_messages turt_topic_generate_messages_nodej
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg" NAME_WE)
+add_dependencies(turt_topic_generate_messages_nodejs _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/NewService.srv" NAME_WE)
+add_dependencies(turt_topic_generate_messages_nodejs _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/AddT.srv" NAME_WE)
 add_dependencies(turt_topic_generate_messages_nodejs _turt_topic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -168,6 +242,18 @@ _generate_msg_py(turt_topic
 )
 
 ### Generating Services
+_generate_srv_py(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/NewService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/turt_topic
+)
+_generate_srv_py(turt_topic
+  "/root/catkin_ws/src/turt_topic/srv/AddT.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/turt_topic
+)
 
 ### Generating Module File
 _generate_module_py(turt_topic
@@ -182,6 +268,10 @@ add_dependencies(turt_topic_generate_messages turt_topic_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg" NAME_WE)
+add_dependencies(turt_topic_generate_messages_py _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/NewService.srv" NAME_WE)
+add_dependencies(turt_topic_generate_messages_py _turt_topic_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/catkin_ws/src/turt_topic/srv/AddT.srv" NAME_WE)
 add_dependencies(turt_topic_generate_messages_py _turt_topic_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

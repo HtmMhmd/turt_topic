@@ -133,6 +133,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turt_topic/srv" TYPE FILE FILES
+    "/root/catkin_ws/src/turt_topic/srv/NewService.srv"
+    "/root/catkin_ws/src/turt_topic/srv/AddT.srv"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turt_topic/cmake" TYPE FILE FILES "/root/catkin_ws/src/turt_topic/build/catkin_generated/installspace/turt_topic-msg-paths.cmake")
 endif()
 

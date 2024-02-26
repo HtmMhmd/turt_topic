@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/root/catkin_ws/src/turt_topic/msg/NewSensor.msg"
-services_str = ""
+services_str = "/root/catkin_ws/src/turt_topic/srv/NewService.srv;/root/catkin_ws/src/turt_topic/srv/AddT.srv"
 pkg_name = "turt_topic"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

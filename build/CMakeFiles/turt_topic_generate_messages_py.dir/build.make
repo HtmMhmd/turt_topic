@@ -54,7 +54,10 @@ CMAKE_BINARY_DIR = /root/catkin_ws/src/turt_topic/build
 include CMakeFiles/turt_topic_generate_messages_py.dir/progress.make
 
 CMakeFiles/turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/msg/_NewSensor.py
+CMakeFiles/turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/srv/_NewService.py
+CMakeFiles/turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/srv/_AddT.py
 CMakeFiles/turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/msg/__init__.py
+CMakeFiles/turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/srv/__init__.py
 
 
 devel/lib/python3/dist-packages/turt_topic/msg/_NewSensor.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
@@ -62,14 +65,36 @@ devel/lib/python3/dist-packages/turt_topic/msg/_NewSensor.py: ../msg/NewSensor.m
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG turt_topic/NewSensor"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /root/catkin_ws/src/turt_topic/msg/NewSensor.msg -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/lib/python3/dist-packages/turt_topic/msg
 
+devel/lib/python3/dist-packages/turt_topic/srv/_NewService.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+devel/lib/python3/dist-packages/turt_topic/srv/_NewService.py: ../srv/NewService.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV turt_topic/NewService"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /root/catkin_ws/src/turt_topic/srv/NewService.srv -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/lib/python3/dist-packages/turt_topic/srv
+
+devel/lib/python3/dist-packages/turt_topic/srv/_AddT.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+devel/lib/python3/dist-packages/turt_topic/srv/_AddT.py: ../srv/AddT.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV turt_topic/AddT"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /root/catkin_ws/src/turt_topic/srv/AddT.srv -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/lib/python3/dist-packages/turt_topic/srv
+
 devel/lib/python3/dist-packages/turt_topic/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 devel/lib/python3/dist-packages/turt_topic/msg/__init__.py: devel/lib/python3/dist-packages/turt_topic/msg/_NewSensor.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for turt_topic"
+devel/lib/python3/dist-packages/turt_topic/msg/__init__.py: devel/lib/python3/dist-packages/turt_topic/srv/_NewService.py
+devel/lib/python3/dist-packages/turt_topic/msg/__init__.py: devel/lib/python3/dist-packages/turt_topic/srv/_AddT.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for turt_topic"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/catkin_ws/src/turt_topic/build/devel/lib/python3/dist-packages/turt_topic/msg --initpy
+
+devel/lib/python3/dist-packages/turt_topic/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+devel/lib/python3/dist-packages/turt_topic/srv/__init__.py: devel/lib/python3/dist-packages/turt_topic/msg/_NewSensor.py
+devel/lib/python3/dist-packages/turt_topic/srv/__init__.py: devel/lib/python3/dist-packages/turt_topic/srv/_NewService.py
+devel/lib/python3/dist-packages/turt_topic/srv/__init__.py: devel/lib/python3/dist-packages/turt_topic/srv/_AddT.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for turt_topic"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/catkin_ws/src/turt_topic/build/devel/lib/python3/dist-packages/turt_topic/srv --initpy
 
 turt_topic_generate_messages_py: CMakeFiles/turt_topic_generate_messages_py
 turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/msg/_NewSensor.py
+turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/srv/_NewService.py
+turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/srv/_AddT.py
 turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/msg/__init__.py
+turt_topic_generate_messages_py: devel/lib/python3/dist-packages/turt_topic/srv/__init__.py
 turt_topic_generate_messages_py: CMakeFiles/turt_topic_generate_messages_py.dir/build.make
 
 .PHONY : turt_topic_generate_messages_py

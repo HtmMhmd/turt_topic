@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /root/catkin_ws/src/turt_topic/build
 include CMakeFiles/turt_topic_generate_messages_nodejs.dir/progress.make
 
 CMakeFiles/turt_topic_generate_messages_nodejs: devel/share/gennodejs/ros/turt_topic/msg/NewSensor.js
+CMakeFiles/turt_topic_generate_messages_nodejs: devel/share/gennodejs/ros/turt_topic/srv/NewService.js
+CMakeFiles/turt_topic_generate_messages_nodejs: devel/share/gennodejs/ros/turt_topic/srv/AddT.js
 
 
 devel/share/gennodejs/ros/turt_topic/msg/NewSensor.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +63,20 @@ devel/share/gennodejs/ros/turt_topic/msg/NewSensor.js: ../msg/NewSensor.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from turt_topic/NewSensor.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/catkin_ws/src/turt_topic/msg/NewSensor.msg -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/share/gennodejs/ros/turt_topic/msg
 
+devel/share/gennodejs/ros/turt_topic/srv/NewService.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/turt_topic/srv/NewService.js: ../srv/NewService.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from turt_topic/NewService.srv"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/catkin_ws/src/turt_topic/srv/NewService.srv -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/share/gennodejs/ros/turt_topic/srv
+
+devel/share/gennodejs/ros/turt_topic/srv/AddT.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/turt_topic/srv/AddT.js: ../srv/AddT.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from turt_topic/AddT.srv"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/catkin_ws/src/turt_topic/srv/AddT.srv -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/share/gennodejs/ros/turt_topic/srv
+
 turt_topic_generate_messages_nodejs: CMakeFiles/turt_topic_generate_messages_nodejs
 turt_topic_generate_messages_nodejs: devel/share/gennodejs/ros/turt_topic/msg/NewSensor.js
+turt_topic_generate_messages_nodejs: devel/share/gennodejs/ros/turt_topic/srv/NewService.js
+turt_topic_generate_messages_nodejs: devel/share/gennodejs/ros/turt_topic/srv/AddT.js
 turt_topic_generate_messages_nodejs: CMakeFiles/turt_topic_generate_messages_nodejs.dir/build.make
 
 .PHONY : turt_topic_generate_messages_nodejs

@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /root/catkin_ws/src/turt_topic/build
 include CMakeFiles/turt_topic_generate_messages_lisp.dir/progress.make
 
 CMakeFiles/turt_topic_generate_messages_lisp: devel/share/common-lisp/ros/turt_topic/msg/NewSensor.lisp
+CMakeFiles/turt_topic_generate_messages_lisp: devel/share/common-lisp/ros/turt_topic/srv/NewService.lisp
+CMakeFiles/turt_topic_generate_messages_lisp: devel/share/common-lisp/ros/turt_topic/srv/AddT.lisp
 
 
 devel/share/common-lisp/ros/turt_topic/msg/NewSensor.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
@@ -61,8 +63,20 @@ devel/share/common-lisp/ros/turt_topic/msg/NewSensor.lisp: ../msg/NewSensor.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from turt_topic/NewSensor.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/catkin_ws/src/turt_topic/msg/NewSensor.msg -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/share/common-lisp/ros/turt_topic/msg
 
+devel/share/common-lisp/ros/turt_topic/srv/NewService.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+devel/share/common-lisp/ros/turt_topic/srv/NewService.lisp: ../srv/NewService.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from turt_topic/NewService.srv"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/catkin_ws/src/turt_topic/srv/NewService.srv -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/share/common-lisp/ros/turt_topic/srv
+
+devel/share/common-lisp/ros/turt_topic/srv/AddT.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+devel/share/common-lisp/ros/turt_topic/srv/AddT.lisp: ../srv/AddT.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/src/turt_topic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from turt_topic/AddT.srv"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /root/catkin_ws/src/turt_topic/srv/AddT.srv -Iturt_topic:/root/catkin_ws/src/turt_topic/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p turt_topic -o /root/catkin_ws/src/turt_topic/build/devel/share/common-lisp/ros/turt_topic/srv
+
 turt_topic_generate_messages_lisp: CMakeFiles/turt_topic_generate_messages_lisp
 turt_topic_generate_messages_lisp: devel/share/common-lisp/ros/turt_topic/msg/NewSensor.lisp
+turt_topic_generate_messages_lisp: devel/share/common-lisp/ros/turt_topic/srv/NewService.lisp
+turt_topic_generate_messages_lisp: devel/share/common-lisp/ros/turt_topic/srv/AddT.lisp
 turt_topic_generate_messages_lisp: CMakeFiles/turt_topic_generate_messages_lisp.dir/build.make
 
 .PHONY : turt_topic_generate_messages_lisp
